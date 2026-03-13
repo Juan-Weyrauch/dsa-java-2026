@@ -142,43 +142,6 @@ Orden:
 
 ---
 
-# Conversión de valores desde la línea de comandos
-
-Los argumentos recibidos en el método `main` se almacenan como **cadenas de texto (String)** dentro del arreglo `args`.
-
-Ejemplo de ejecución:
-
-```
-java ArithmeticDemo 10 5
-```
-
-Internamente Java recibe:
-
-```
-args[0] = "10"
-args[1] = "5"
-```
-
-Para poder realizar operaciones matemáticas es necesario convertirlos a números:
-
-```java
-int num1 = Integer.parseInt(args[0]);
-int num2 = Integer.parseInt(args[1]);
-```
-
----
-
-# Tabla de conversiones usadas
-
-| Conversión      | Método                 | Ejemplo             |
-| --------------- | ---------------------- | ------------------- |
-| String → int    | `Integer.parseInt()`   | `"10" → 10`         |
-| String → double | `Double.parseDouble()` | `"3.14" → 3.14`     |
-| int → String    | `String.valueOf()`     | `10 → "10"`         |
-| número → String | concatenación          | `"Resultado: " + 5` |
-
----
-
 # Compilación y ejecución
 
 ## Compilar
@@ -201,11 +164,6 @@ java ArithmeticDemo 10 5
 Resultado final: 4
 Valor de a: 9
 Valor de i: 4
-Suma: 15
-Resta: 5
-Multiplicación: 50
-División: 2
-Módulo: 0
 ```
 
 ---
