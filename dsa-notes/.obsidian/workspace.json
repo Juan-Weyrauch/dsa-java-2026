@@ -4,20 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "37530e88d2fd26a6",
+        "id": "f2516d1312969ddf",
         "type": "tabs",
         "children": [
           {
-            "id": "0454802c1c2d6ff2",
+            "id": "17eeb4421c856da9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Welcome"
+            }
+          },
+          {
+            "id": "0c87804e4d569b41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "aaaaaaaaa.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "aaaaaaaaa"
+            }
+          },
+          {
+            "id": "a0fbd36a6a6dd7c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Antropología - Cuerpo/resumen de capítulos 1 y 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "resumen de capítulos 1 y 2"
+            }
+          },
+          {
+            "id": "eac4dae1cf602ed8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Antropología - Cuerpo/12 frases.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "12 frases"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -90,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "12 frases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for 12 frases"
             }
           },
           {
@@ -109,12 +156,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "Antropología - Cuerpo/12 frases.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from 12 frases"
             }
           },
           {
@@ -152,21 +199,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "12 frases.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of 12 frases"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,9 +226,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "84298a20ef61a35a",
+  "active": "eac4dae1cf602ed8",
   "lastOpenFiles": [
-    "Unidad 1",
-    "Welcome.md"
+    "Antropología - Cuerpo/resumen de capítulos 1 y 2.md",
+    "Antropología - Cuerpo/12 frases.md",
+    "Antropología - Cuerpo/Untitled.md",
+    "Antropología - Cuerpo",
+    "Welcome.md",
+    "create a link.md",
+    "Untitled.canvas",
+    "2026-03-16.md",
+    "Untitled.base",
+    "Unidad 1"
   ]
 }
