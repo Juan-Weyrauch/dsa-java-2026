@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "c008fe6196b62ace",
+    "id": "d4460c9d8b6676b3",
     "type": "split",
     "children": [
       {
-        "id": "f2516d1312969ddf",
+        "id": "c749e4b2113f6e62",
         "type": "tabs",
         "children": [
           {
-            "id": "eac4dae1cf602ed8",
+            "id": "ba3dcbb6823d0377",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Etica profesional/Hirsch. Principios de la bioética.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Hirsch. Principios de la bioética"
+              "title": "New tab"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c8d400c7b2cf6fb3",
+    "id": "fc7fefc4f43dc885",
     "type": "split",
     "children": [
       {
-        "id": "88da00049032e6c2",
+        "id": "77d4dc24359829dc",
         "type": "tabs",
         "children": [
           {
-            "id": "84298a20ef61a35a",
+            "id": "593cd24c72f81b10",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +44,7 @@
             }
           },
           {
-            "id": "a2eaa85c362d3eed",
+            "id": "8404ae8fd98587c5",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "2587e928aa80cde9",
+            "id": "9da9cb77c8bf989a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "309d237ea9b8e25e",
+    "id": "28d9c2b9ce675131",
     "type": "split",
     "children": [
       {
-        "id": "a7890b9f00acc69f",
+        "id": "504d0b8fd7ba7ccb",
         "type": "tabs",
         "children": [
           {
-            "id": "b3bd8e7f5972d414",
+            "id": "789c1ab5589c5439",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "12 frases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 12 frases"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "d986fad1e6e32bdb",
+            "id": "e67967c242a50545",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Etica profesional/Hirsch. Principios de la bioética.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Hirsch. Principios de la bioética"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "9036a2c661cb1ae5",
+            "id": "493bd4f42e8d0d41",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,67 +131,39 @@
             }
           },
           {
-            "id": "fc3ff3f0ac390e10",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "5e01b3d6ebe52d10",
+            "id": "584379bc1aab95ff",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "12 frases.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 12 frases"
+              "title": "Outline"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "84298a20ef61a35a",
+  "active": "593cd24c72f81b10",
   "lastOpenFiles": [
-    "Etica profesional/Adela Cortina/Capítulos I y III.md",
-    "Etica profesional/Hirsch. Principios de la bioética.md",
-    "Antropología - Cuerpo/resumen de capítulos 1 y 2.md",
-    "Welcome.md",
-    "Antropología - Cuerpo/12 frases.md",
-    "Etica profesional/Adela Cortina",
-    "Etica profesional",
-    "Antropología - Cuerpo/Untitled.md",
-    "Antropología - Cuerpo",
-    "create a link.md",
-    "Untitled.canvas",
-    "2026-03-16.md",
-    "Untitled.base",
-    "Unidad 1"
+    "Untitled.base"
   ]
 }

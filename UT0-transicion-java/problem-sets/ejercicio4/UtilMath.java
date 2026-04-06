@@ -1,6 +1,3 @@
-// package dsa-java-2026.UT0-transicion-java.problem-sets.ejercicio4;
-
-
 public class UtilMath {
 
     // ----- Factorial Method -----
@@ -65,3 +62,13 @@ public class UtilMath {
         System.out.println("Conditional sum: " + conditionalSum(number));
     }
 }
+
+/*
+Explicación de al menos dos decisiones de diseño:
+    - Se utilizó una variable de tipo long en el método "calculateFactorial" debido a que, a pesar de ocupar más espacio en memoria, 
+    el mayor valor de un dato tipo integer es de 2.147.483.647, lo cual es 12! = 479,001,600, ya que 13! = 6,227,020,800 , y lo excede. 
+    Long llega hasta 20!, lo cuál es (en nuestra opinión) más que suficiente para casos normales. En otro caso, se utlizaría una variable 
+    BigInteger, ya que no tiene un límite teórico de espacio. 
+    - Se utlizó el ciclo while y no el do-while ya que resulta en una comprensión más simple (a nuestro parecer), así como también nos da
+    una lógica más simple, al no tener que trabajar con un primer loop que corre siempre. 
+*/
