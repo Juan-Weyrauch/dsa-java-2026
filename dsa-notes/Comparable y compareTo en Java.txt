@@ -1,0 +1,85 @@
+Comparable y compareTo en Java
+¿Qué es Comparable?
+Comparable<T> es una interfaz de Java que le dice a tu clase "sabe compararse con otra del mismo tipo". Al implementarla, tenés que definir un solo método:
+javaint compareTo(T otro)
+El contrato del método es simple:
+
+Retorna negativo → this va antes que otro
+Retorna 0 → son iguales
+Retorna positivo → this va después que otro
+
+Esto es lo que usa internamente un AVL (o cualquier BST) para decidir si un nodo va a la izquierda o a la derecha.
+
+Implementación para Tripulante
+Tu criterio de orden es:
+
+Primero por nivel (menor nivel = antes)
+Si empatan → por energía (menor energía = antes)
+Si empatan → por id (menor id = antes)
+
+javapublic class Tripulante implements Comparable<Tripulante> {
+
+    private int id;
+    private int estado;  // 0=disponible, 1=en misión, 2=en recuperación
+    private int nivel;
+    private int energia;
+
+    public Tripulante(int id, int estado, int nivel, int energia) {
+        this.id = id;
+        this.estado = estado;
+        this.nivel = nivel;
+        this.energia = energia;
+    }
+
+    @Override
+    public int compareTo(Tripulante otro) {
+
+        // 1° criterio: nivel
+        if (this.nivel != otro.nivel) {
+            return this.nivel - otro.nivel;
+        }
+
+        // 2° criterio: energia (si niveles iguales)
+        if (this.energia != otro.energia) {
+            return this.energia - otro.energia;
+        }
+
+        // 3° criterio: id (si energia también igual)
+        return this.id - otro.id;
+    }
+
+    // Getters...
+    public int getId()      { return id; }
+    public int getEstado()  { return estado; }
+    public int getNivel()   { return nivel; }
+    public int getEnergia() { return energia; }
+}
+
+¿Por qué this.nivel - otro.nivel funciona?
+Porque cumple el contrato:
+SituaciónResultadoSignificadothis.nivel = 2, otro.nivel = 5-3 (negativo)this va antesthis.nivel = 5, otro.nivel = 2+3 (positivo)this va despuésthis.nivel = 3, otro.nivel = 30iguales → siguiente criterio
+
+⚠️ Ojo: esta resta solo es segura si los valores no pueden causar overflow (enteros muy grandes o muy negativos). Para ints acotados como nivel/energía/id está perfecto. Si hubiera duda, usás Integer.compare(this.nivel, otro.nivel) que es equivalente pero más seguro.
+
+
+¿Cómo lo usa el AVL?
+Tu nodo del AVL internamente hace algo así al insertar:
+javaint cmp = nuevoTripulante.compareTo(nodoActual.dato);
+
+if (cmp < 0) {
+    // va al subárbol izquierdo
+} else if (cmp > 0) {
+    // va al subárbol derecho
+} else {
+    // ya existe (duplicado), según tu implementación: ignorar o reemplazar
+}
+El AVL nunca necesita saber cuál atributo estás comparando — solo le importa el signo del resultado. Todo el criterio de orden está encapsulado en tu compareTo.
+
+Ejemplo rápido
+javaTripulante t1 = new Tripulante(5, 0, 3, 80);
+Tripulante t2 = new Tripulante(2, 1, 3, 80);
+Tripulante t3 = new Tripulante(1, 0, 5, 90);
+
+System.out.println(t1.compareTo(t3)); // negativo → t1 antes (nivel 3 < 5)
+System.out.println(t1.compareTo(t2)); // positivo → t1 después (mismo nivel y energía, pero id 5 > 2)
+El árbol AVL quedaría ordenado: t2 → t1 → t3 (in-order).
